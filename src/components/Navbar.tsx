@@ -8,7 +8,7 @@ export default function Navbar() {
         <NavLink to="/">
           <div className="flex items-center ">
             <img className="w-10 md:w-12" src={notesLogo} alt="notes logo" />
-            <p className="font-bold text-xl text-white">Easy Notes</p>
+            <p className="font-bold md:text-xl text-white">Easy Notes</p>
           </div>
         </NavLink>
         <div className="flex items-center gap-6 md:text-xl text-white font-medium">
