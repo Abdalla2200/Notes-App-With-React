@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className=" h-screen">
+    <div>
       <Navbar />
       <Outlet />
     </div>

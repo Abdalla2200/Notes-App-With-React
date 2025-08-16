@@ -5,7 +5,7 @@ export default function NotesList() {
   const { notes } = useNotes();
 
   return (
-    <main className="container min-h-[80vh]">
+    <main className="container min-`h-[80vh] pb-5">
       <h1 className="my-6 text-3xl md:text-4xl text-purple-900 font-medium">
         Your Notes
       </h1>
