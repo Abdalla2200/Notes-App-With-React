@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { useNotes } from "@/context/NotesContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const { addNote } = useNotes();
+
+  const navigate = useNavigate();
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -13,6 +16,8 @@ export default function Form() {
 
     setTitle("");
     setDescription("");
+
+    navigate("/notes");
   }
 
   return (
